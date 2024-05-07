@@ -1,0 +1,130 @@
+@import "compass/css3";
+
+
+/* 目次線のテンプレ */
+.bg-default-left {
+    width: 20%;
+    height: 30%;
+    background-color: #FEF7F0;
+    position: absolute;
+    z-index: -1;
+}
+
+.bg-default-right {
+    width: 20%;
+    height: 80%;
+    background-color: #FEF7F0;
+    z-index: -1;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+}
+
+/* 目次の文字用のテンプレ */
+.text-border2{
+    padding-left: 10%;
+    padding-top: 5%;
+    display: flex;
+    align-items:center;
+    justify-content: start; /* 水平中心 */
+    position: relative;
+    top: 30%;
+}
+
+.text-border2::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: -15px;/*線の上下位置*/
+    width: 80%;/*線の長さ*/
+    height: 2px;/*線の太さ*/
+    background-color: black;/*線の色*/
+    border-radius: 2px;/*線の丸み*/
+}
+
+
+/* 画像を2枚重ね合わせるテンプレ */
+.image-double{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+    padding-bottom: 2%;
+}
+
+.image-double-container{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-double-container-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.image-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #D8BBA1;
+    z-index: -3;
+    bottom: 4%;
+    left: 2%;
+}
+
+
+
+
+/* サービス内奥を示すためのテンプレ */
+.image-double-txt{
+    height: 100%;
+    width: 50%;
+    justify-items: start;
+    padding-left: 10%;
+
+}
+.text-border3{
+    padding-left: 10%;
+    padding-top: 5%;
+    display: flex;
+    align-items:center;
+    justify-content: start; /* 水平中心 */
+    position: relative;
+    top: 30%;
+}
+.text-border3::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: -15px;/*線の上下位置*/
+    width: 80%;/*線の長さ*/
+    height: 2px;/*線の太さ*/
+    background-color: black;/*線の色*/
+    border-radius: 2px;/*線の丸み*/
+}
+
+.text-describe{
+    width: 100%;
+    height: 100%;
+    padding-left: 18%;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

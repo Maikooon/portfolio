@@ -1,0 +1,52 @@
+@import "compass/css3";
+
+
+/* カテゴリの目次 */
+h1{
+    text-align: center;
+    font-size: 3vw;
+    color: #fff;
+    font-family: serif;
+    font-weight:bolder;
+    font-style: italic;
+}
+
+h2{
+    text-align: center;
+    color: #000;
+    font-family: serif;
+    font-size:2.0em;
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+    color: #000022;
+    font-family: serif;
+    font-size: x-large;
+}
+
+h4{
+    text-align: center;
+    color: #000022;
+    font-family: serif;
+    font-size: large;
+}
+
+.h5{
+
+}
+
+/* 一般的な目次 */
+p{
+    display: flex;
+    color: #000022;
+    font-family: serif;
+    
+    
+}
+
+
+
+
+
