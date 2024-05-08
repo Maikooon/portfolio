@@ -15,8 +15,8 @@ body {
 }
 
 /* タイトルのテンプレ */
-.title{
-    width:90%;
+.title {
+    width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -32,23 +32,31 @@ body {
     align-items: center;
     overflow: hidden;
 }
+
 .slide-wrapper-1 {
     display: flex;
     animation: slide-flow 20s infinite linear 1s both;
 }
-.slide{
+
+.slide {
     width: 65%;
     height: auto;
-    object-fit:cover;
+    object-fit: cover;
     border: 1px solid #ddd;
 }
+
 @keyframes slide-flow {
-    0% {transform: translateX(0);}
-    100% {transform: translateX(-100%);}
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* 文字と画像を重ねて表示する */
-.layer{
+.layer {
     display: flex;
     justify-self: center;
     align-items: center;
@@ -58,12 +66,12 @@ body {
     flex-direction: column;
 }
 
-.layer-bg{
-   /* background: url(https://thumb.ac-illust.com/52/52c43d0d9d6b014e5052cf65e195a908_t.jpeg) no-repeat 0 0; */
+.layer-bg {
+    /* background: url(https://thumb.ac-illust.com/52/52c43d0d9d6b014e5052cf65e195a908_t.jpeg) no-repeat 0 0; */
     background-size: 100%;
 }
 
-.layer-txt{
+.layer-txt {
     width: 90%;
     height: 100%;
     padding-left: 10%;
@@ -76,7 +84,7 @@ body {
     width: 90%;
     height: 100%;
     /* 縦並びにする */
-    flex-direction: column;   
+    flex-direction: column;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 5%;
@@ -92,16 +100,16 @@ body {
     padding-right: 5%;
 }
 
-.img-container{
+.img-container {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    align-items: center; 
+    align-items: center;
     display: relative;
     align-items: center;
 }
 
-.service-txt{
+.service-txt {
     width: 100%;
     height: 100%;
     align-items: center;
@@ -112,7 +120,7 @@ body {
 /* About us  */
 
 
-.about-us-text{
+.about-us-text {
     width: 40%;
     height: 100%;
     padding-left: 5%;
@@ -121,7 +129,7 @@ body {
     text-align: center;
 }
 
-.about-us-container{
+.about-us-container {
     width: 60%;
     height: 100%;
     align-items: center;
@@ -129,7 +137,7 @@ body {
 }
 
 /* mvv */
-.mvv{
+.mvv {
     width: 90%;
     height: 100%;
     /* 縦並びにする */
@@ -139,7 +147,7 @@ body {
     position: relative;
 }
 
-.mvv-container{
+.mvv-container {
     width: 30%;
     height: 100%;
     text-align: center;
@@ -152,7 +160,7 @@ body {
 
 /* 先生の紹介画面 */
 
-.person{
+.person {
     width: 80%;
     height: 100%;
     align-items: center;
@@ -163,37 +171,39 @@ body {
     word-break: break-all;
 }
 
-.per-person{
+.per-person {
     width: 30%;
     height: 100%;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
 
-.person-img{
-    width: 100%;
-    height: 100%;
-    align-items: center;
+.person-img {
+    /* width: 100%;
+    height: 100%; */
+    align-items: bottom;
     display: flex;
     word-break: break-all;
 
 }
-.person-txt{
-    width:100%;
-    height:100%;
+
+.person-txt {
+    width: 100%;
+    height: 100%;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
 
-.card{
+.card {
     width: 80%;
     height: 100%;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding-left: 15%;
 
 }
-.card-container{
+
+.card-container {
     width: 50%;
     height: 100%;
     display: flex;
@@ -202,13 +212,15 @@ body {
     overflow: hidden;
     padding: 5%;
 }
-.card-img{
+
+.card-img {
     border-radius: 8px;
-    object-fit:cover;
-    
+    object-fit: cover;
+
 
 }
-.card-txtbox{
+
+.card-txtbox {
     width: 100%;
     height: 100%;
     padding-left: 5%;
@@ -216,7 +228,7 @@ body {
 }
 
 /* 会社情報 */
-.info-container{
+.info-container {
     width: 80%;
     height: 100%;
     display: flex;
@@ -225,11 +237,12 @@ body {
     padding-right: 5%;
 }
 
-.info-img{
+.info-img {
     width: 30%;
     height: 100%;
 }
-.info-describe{
+
+.info-describe {
     width: 50%;
     height: 100%;
     padding-left: 5%;
@@ -238,23 +251,24 @@ body {
     align-items: center;
 }
 
-.info-detail{
+.info-detail {
     width: 70%;
     height: 100%;
     margin-top: 1%;
     display: flex;
     padding-left: 15%;
-    align-items:center;
+    align-items: center;
     padding-bottom: 8%;
 }
-.box1{
-    width:50%;
+
+.box1 {
+    width: 50%;
     height: 100%;
 }
 
 
 /*contact */
-.contact{
+.contact {
     width: 90%;
     height: 100%;
     padding-bottom: 5%;
@@ -262,9 +276,3 @@ body {
     padding-right: 5%;
     align-items: center;
 }
-
-
-
-
-
-
