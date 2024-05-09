@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="./css/txt.css" />
 <link rel="stylesheet" type="text/css" href="./css/footer.css" />
 <link rel="stylesheet" type="text/css" href="./css/animation.css" />
+<link rel="stylesheet" type="text/css" href="./css/modal.css" />
 <link rel="stylesheet" type="text/js" href="./js/main.js" />
 <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
@@ -43,11 +44,10 @@
 	</div>
 
 	<!-- About us -->
-
 	<a name="1"></a>
 	<div class="title">
 		<div class="per-person">
-			<div class="person-img">
+			<div class="person-img0">
 				<img src="./image/maiko.png" width="240%">
 			</div>
 		</div>
@@ -140,8 +140,14 @@
 		</div>
 		<div class="person">
 			<div class="per-person">
-				<div class="person-img">
-					<img src="./image/port.png" width="100%">
+				<!-- 画像の部分をMOdalにしたい -->
+				<!-- ここで画像を入れる箱の大きさを指定 -->
+				<div class="image-content">
+					<div class='person-img'>
+						<button id="openModal">
+							<img src="./image/port.png" width="100%" onclick="openModal()">
+						</button>
+					</div>
 				</div>
 				<div class="person-txt">
 					<h4 class="text-border2">
@@ -152,9 +158,36 @@
 					</p>
 				</div>
 			</div>
+			<!-- モーダルエリアここから -->
+			<section id="modalArea" class="modalArea">
+				<div id="modalBg" class="modalBg"></div>
+				<div class="modalWrapper">
+					<div class="modalContents">
+						<h1>Here are modal contents!</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore
+							et dolore magna aliqua. </p>
+					</div>
+					<div id="closeModal" class="closeModal">
+
+					</div>
+				</div>
+			</section>
+			<!-- モーダルエリアここまで -->
+
+			<!-- ↓body閉じタグ直前でjQueryを読み込む -->
+			<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+			<!-- modal content end/ -->
+
 			<div class="per-person">
-				<div class="person-img">
-					<img src="./image/dmApp.png" width="100%">
+				<div class=image-content>
+
+					<div class="person-img">
+						<div class=openModal>
+							<img src="./image/dmApp.png" width="100%" onclick="openModal()">
+						</div>
+					</div>
 				</div>
 				<div class="person-txt">
 					<h4 class="text-border2">
@@ -167,8 +200,12 @@
 				</div>
 			</div>
 			<div class="per-person">
-				<div class="person-img">
-					<img src="./image/kabu.png" width="100%">
+				<div class="image-content">
+					<div class=" person-img">
+						<div class=openModal>
+							<img src="./image/kabu.png" width="100%">
+						</div>
+					</div>
 				</div>
 				<div class="person-txt">
 					<h4 class="text-border2">
@@ -179,6 +216,28 @@
 					</p>
 				</div>
 			</div>
+			<!-- モーダルエリアここから -->
+			<section id="modalArea" class="modalArea">
+				<div id="modalBg" class="modalBg"></div>
+				<div class="modalWrapper">
+					<div class="modalContents">
+						<h1>Here are modal contents!</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore
+							et dolore magna aliqua. </p>
+					</div>
+					<div id="closeModal" class="closeModal">
+
+					</div>
+				</div>
+			</section>
+			<!-- モーダルエリアここまで -->
+
+			<!-- ↓body閉じタグ直前でjQueryを読み込む -->
+			<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
 			<div class="per-person">
 				<div class="person-img">
 					<img src="./image/note.png" width="100%">
@@ -212,8 +271,29 @@
 
 		</div>
 	</div>
-	<!-- ここでインポート-->
-	<script src="./js/main.js"></script>
+
+
+	<button id="openModal">Open modal</button>
+	<!-- モーダルエリアここから -->
+	<section id="modalArea" class="modalArea">
+		<div id="modalBg" class="modalBg"></div>
+		<div class="modalWrapper">
+			<div class="modalContents">
+				<h1>Here are modal contents!</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. </p>
+			</div>
+			<div id="closeModal" class="closeModal">
+				×
+			</div>
+		</div>
+	</section>
+	<!-- モーダルエリアここまで -->
+
+	<!-- ↓body閉じタグ直前でjQueryを読み込む -->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 </body>
 
 

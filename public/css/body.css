@@ -163,28 +163,57 @@ body {
 .person {
     width: 80%;
     height: 100%;
-    align-items: center;
     display: flex;
-    padding-left: 10%;
+    padding-top: 70px;
+    padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
     word-break: break-all;
+    justify-content: flex-start;
+    align-self: flex-start;
 }
 
 .per-person {
-    width: 30%;
-    height: 100%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    width: 20%;
+    height: 80%;
+    padding-left: 20%;
+    padding-right: 0.5%;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center;
+    justify-content: center;
+    background-color: #333; */
 }
 
-.person-img {
-    /* width: 100%;
-    height: 100%; */
+.person-img0 {
+    width: 100%;
+    height: 100%;
     align-items: bottom;
     display: flex;
     word-break: break-all;
+    background-color: red;
+}
 
+.person-img {
+    width: 200px;
+    height: 220px;
+    align-items: bottom;
+    display: flex;
+    word-break: break-all;
+    background-color: red;
+}
+
+.image-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background-color: aqua;
 }
 
 .person-txt {
