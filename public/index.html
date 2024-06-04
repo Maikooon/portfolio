@@ -178,63 +178,6 @@
 			<!-- ↓body閉じタグ直前でjQueryを読み込む -->
 			<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-			<!-- modal content end/ -->
-
-			<div class="per-person">
-				<div class=image-content>
-
-					<div class="person-img">
-						<div class=openModal>
-							<img src="./image/dmApp.png" width="100%" onclick="openModal()">
-						</div>
-					</div>
-				</div>
-				<div class="person-txt">
-					<h4 class="text-border2">
-						スタバデモアプリ
-					</h4>
-					<p>
-						授業の一環として、データベース構築から行いました.
-						ログインすると、ドリンクや店舗、お気に入り登録をすることができます.
-					</p>
-				</div>
-			</div>
-			<div class="per-person">
-				<div class="image-content">
-					<div class=" person-img">
-						<div class=openModal>
-							<img src="./image/kabu.png" width="100%">
-						</div>
-					</div>
-				</div>
-				<div class="person-txt">
-					<h4 class="text-border2">
-						決算日取得サービス
-					</h4>
-					<p>
-						証券コードを入力すると、直近の決算日を提示してくれ、注目会社の決算をカレンダーに自動追加してくれます.
-					</p>
-				</div>
-			</div>
-			<!-- モーダルエリアここから -->
-			<section id="modalArea" class="modalArea">
-				<div id="modalBg" class="modalBg"></div>
-				<div class="modalWrapper">
-					<div class="modalContents">
-						<h1>Here are modal contents!</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore
-							et dolore magna aliqua. </p>
-					</div>
-					<div id="closeModal" class="closeModal">
-
-					</div>
-				</div>
-			</section>
-			<!-- モーダルエリアここまで -->
-
-			<!-- ↓body閉じタグ直前でjQueryを読み込む -->
-			<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 
@@ -272,19 +215,35 @@
 		</div>
 	</div>
 
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<button id="openModal">Open modal</button>
+	<div class="work">
+		<div class="work-img">
+			<div button id="openModal">
+				<img src="./image/port.png" width="100%" onclick="openModal()">
+			</div>
+		</div>
+		<div class="work-txt">
+			<h4 class="text-border2">
+				Work
+			</h4>
+			<p>
+				現在はデータ分析のインターンをしています. その他にも、新規事業やモバイルアプリ開発のインターンを経験しています.
+			</p>
+		</div>
+	</div>
 	<!-- モーダルエリアここから -->
 	<section id="modalArea" class="modalArea">
 		<div id="modalBg" class="modalBg"></div>
 		<div class="modalWrapper">
 			<div class="modalContents">
 				<h1>Here are modal contents!</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+					labore
 					et dolore magna aliqua. </p>
 			</div>
 			<div id="closeModal" class="closeModal">
-				×
+
 			</div>
 		</div>
 	</section>
@@ -292,6 +251,7 @@
 
 	<!-- ↓body閉じタグ直前でjQueryを読み込む -->
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 
 </body>

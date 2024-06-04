@@ -36,7 +36,7 @@ $(function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  const personImg = document.querySelector('.person-img img'); // 画像要素を取得
+  const personImg = document.querySelector('.work-img img'); // 画像要素を取得
 
   // 画像をクリックしたときのイベントリスナーを追加
   personImg.addEventListener('click', function () {
